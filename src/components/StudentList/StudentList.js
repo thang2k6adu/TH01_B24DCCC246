@@ -1,27 +1,30 @@
-// StudentList.js (Component cha)
+// StudentList.js
 import React from 'react';
 import StudentCard from './StudentCard';
 
-const StudentList = () => {
-  const students = [
-    { name: 'Nguyễn Văn A', age: 20, className: 'CNTT1' },
-    { name: 'Trần Thị B', age: 21, className: 'CNTT2' },
-    { name: 'Lê Văn C', age: 19, className: 'CNTT3' },
-  ];
+const students = [
+  { name: 'Alice Nguyen', age: 20, className: 'CS101' },
+  { name: 'Bob Tran', age: 22, className: 'CS102' },
+  { name: 'Charlie Le', age: 21, className: 'CS103' },
+];
 
+export default function StudentList() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
-      <h1>Danh sách sinh viên</h1>
-      {students.map((student, index) => (
-        <StudentCard
-          key={index}
-          name={student.name}
-          age={student.age}
-          className={student.className}
-        />
-      ))}
-    </div>
+    <section className="pricing" id="students">
+      <div className="pricing-header">
+        <h2>Danh sách học sinh</h2>
+        <p className="features-subtitle">Ấn show details để xem thêm thông tin</p>
+      </div>
+      <div className="pricing-cards">
+        {students.map((student, index) => (
+          <StudentCard
+            key={index}
+            name={student.name}
+            age={student.age}
+            className={student.className}
+          />
+        ))}
+      </div>
+    </section>
   );
-};
-
-export default StudentList;
+}

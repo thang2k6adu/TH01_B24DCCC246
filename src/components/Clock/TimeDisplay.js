@@ -6,7 +6,7 @@ const TimeDisplay = ({ time }) => {
   const formattedTime = time.toLocaleTimeString();
 
   return (
-    <h2>{formattedTime}</h2>
+    <h1>{formattedTime}</h1>
   );
 };
 

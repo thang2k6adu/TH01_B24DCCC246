@@ -1,35 +1,24 @@
-// StudentCard.js (Component con)
+// StudentCard.js
 import React, { useState } from 'react';
 
-const StudentCard = ({ name, age, className }) => {
-  const [showDetails, setShowDetails] = useState(true); // trạng thái hiển thị chi tiết
+export default function StudentCard({ name, age, className }) {
+  const [showDetails, setShowDetails] = useState(false);
 
-  const toggleDetails = () => setShowDetails(!showDetails);
+  const toggleDetails = () => setShowDetails(prev => !prev);
 
   return (
-    <div style={{
-      border: '1px solid #ccc',
-      borderRadius: '10px',
-      padding: '15px',
-      marginBottom: '10px',
-      width: '250px'
-    }}>
-      <h3>{name}</h3>
+    <div className="pricing-card"> {/* dùng class cũ để giữ CSS */}
+      <div className="plan-name">{name}</div>
+
       {showDetails && (
-        <>
-          <p>Tuổi: {age}</p>
-          <p>Lớp: {className}</p>
-        </>
+        <div className="plan-price" style={{fontSize: '20px'}}>
+          Tuổi: {age}<br/>Lớp: {className}
+        </div>
       )}
-      <button onClick={toggleDetails} style={{
-        padding: '5px 10px',
-        cursor: 'pointer',
-        borderRadius: '5px'
-      }}>
-        {showDetails ? 'Ẩn chi tiết' : 'Hiện chi tiết'}
+
+      <button className="cta-button" onClick={toggleDetails}>
+        {showDetails ? 'Hide Details' : 'Show Details'}
       </button>
     </div>
   );
-};
-
-export default StudentCard;
+}
