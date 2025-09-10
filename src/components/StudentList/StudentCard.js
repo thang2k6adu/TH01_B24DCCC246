@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function StudentCard({ name, age, className }) {
+export const StudentCard = ({ name, age, className }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const toggleDetails = () => setShowDetails(prev => !prev);

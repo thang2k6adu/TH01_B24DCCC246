@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function index() {
+export const Footer = () => {
   return (
     <footer className="footer">
     <div className="footer-container">
