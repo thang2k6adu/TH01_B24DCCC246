@@ -7,6 +7,8 @@ const ColorBoxApp = () => {
   const [color, setColor] = useState(colors[0]); // màu hiện tại
 
   return (
+    <section className="pricing" id="pricing">
+
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Ứng dụng đổi màu nền</h1>
       <ColorBox color={color} /> {/* Truyền màu xuống component con */}
@@ -31,6 +33,7 @@ const ColorBoxApp = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

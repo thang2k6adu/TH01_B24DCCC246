@@ -15,10 +15,13 @@ const Clock = () => {
   }, []);
 
   return (
+    <section className="about" id="about">
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Đồng hồ</h1>
       <TimeDisplay time={time} />
     </div>
+    </section>
+
   );
 };
 

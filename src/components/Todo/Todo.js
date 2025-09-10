@@ -13,6 +13,8 @@ const TodoApp = () => {
   };
 
   return (
+    <section className="features" id="features">
+        <div className="features-container">
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Danh sách công việc</h1>
       <input
@@ -30,6 +32,8 @@ const TodoApp = () => {
         ))}
       </ul>
     </div>
+    </div>
+    </section>
   );
 };
 
