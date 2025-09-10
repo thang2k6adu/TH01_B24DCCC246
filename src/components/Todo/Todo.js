@@ -1,15 +1,14 @@
-// TodoApp.js (Component cha)
 import React, { useState } from 'react';
 import TodoItem from './TodoItem';
 
 const TodoApp = () => {
-  const [task, setTask] = useState(''); // lưu giá trị input
-  const [tasks, setTasks] = useState([]); // danh sách công việc
+  const [task, setTask] = useState(''); 
+  const [tasks, setTasks] = useState([]); 
 
   const handleAddTask = () => {
-    if (task.trim() === '') return; // không thêm nếu trống
-    setTasks([...tasks, task]); // thêm công việc vào danh sách
-    setTask(''); // reset input
+    if (task.trim() === '') return; 
+    setTasks([...tasks, task]);
+    setTask('');
   };
 
   return (

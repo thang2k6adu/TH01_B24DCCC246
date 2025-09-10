@@ -1,4 +1,3 @@
-// TodoItem.js (Component con)
 import React from 'react';
 
 const TodoItem = ({ task }) => {

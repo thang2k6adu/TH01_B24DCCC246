@@ -1,4 +1,3 @@
-// StudentCard.js
 import React, { useState } from 'react';
 
 export default function StudentCard({ name, age, className }) {
@@ -7,7 +6,7 @@ export default function StudentCard({ name, age, className }) {
   const toggleDetails = () => setShowDetails(prev => !prev);
 
   return (
-    <div className="pricing-card"> {/* dùng class cũ để giữ CSS */}
+    <div className="pricing-card">
       <div className="plan-name">{name}</div>
 
       {showDetails && (

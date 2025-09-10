@@ -1,4 +1,3 @@
-// ColorBox.js (Component con)
 import React from 'react';
 
 const ColorBox = ({ color }) => {

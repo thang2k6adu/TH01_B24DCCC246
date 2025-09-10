@@ -1,4 +1,3 @@
-// DisplayNumber.js (Component con)
 import React from 'react';
 
 const DisplayNumber = ({ number }) => {

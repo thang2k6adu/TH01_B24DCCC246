@@ -1,4 +1,3 @@
-// Counter.js (Component cha)
 import React, { useState } from "react";
 import DisplayNumber from "./DisplayNumber";
 
@@ -18,7 +17,7 @@ const Counter = () => {
       <div className="hero-content">
         <div style={{ textAlign: "center", marginTop: "50px" }}>
           <h1>Ứng dụng Đếm số</h1>
-          <DisplayNumber number={count} /> {/* Truyền số xuống component con */}
+          <DisplayNumber number={count} />
           <div style={{ marginTop: "20px" }}>
             <button onClick={handleDecrement} className="cta-button">
               -

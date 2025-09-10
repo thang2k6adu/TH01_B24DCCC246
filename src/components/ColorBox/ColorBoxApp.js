@@ -1,4 +1,3 @@
-// ColorBoxApp.js (Component cha)
 import React, { useState } from 'react';
 import ColorBox from './ColorBox';
 
@@ -11,7 +10,7 @@ const ColorBoxApp = () => {
 
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Ứng dụng đổi màu nền</h1>
-      <ColorBox color={color} /> {/* Truyền màu xuống component con */}
+      <ColorBox color={color} /> 
       
       <div style={{ marginTop: '20px' }}>
         {colors.map((c) => (

@@ -1,4 +1,3 @@
-// Clock.js (Component cha)
 import React, { useState, useEffect } from 'react';
 import TimeDisplay from './TimeDisplay';
 
@@ -10,7 +9,6 @@ const Clock = () => {
       setTime(new Date());
     }, 1000);
 
-    // Cleanup khi component unmount
     return () => clearInterval(intervalId);
   }, []);
 
